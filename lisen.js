@@ -2029,7 +2029,142 @@ $(function () {
     }
   })
 })
+var baSe64 = 'e7kzeUCarU0sw6NbKpQ=',
+  baSe6A = 'qIS9eIJ3Kn0mqV8vMVb9w7zcKjklKv==',
+  kodeLisensi = $('#HTML99 .license-code').text(),
+  informasibatas =
+    '<style>body{background:#000}#peringatan span{font-size:50px}#peringatan{z-index:99999;position:fixed;top:0;right:0;left:0;height:100%;text-align:center;background:rgba(0, 0, 0, 0.95);border:5px solid #444;color:#fff;padding:20px;font-family:monospace;border-radius:10px}#peringatan h4{font-size:20px}</style><div id="peringatan"><h4>Activate Templates</h4><p>Untuk mendapatkan lisensi Anda bisa menghubungi Admin simpeltoko.id (WA 6285703540354)</p><span id="batas-waktu-template">1</span></div>',
+  informasiupdate =
+    '<style>body{background:#000}#peringatan span{font-size:50px}#peringatan{z-index:99999;position:fixed;top:0;right:0;left:0;height:100%;text-align:center;background:rgba(0, 0, 0, 0.95);border:5px solid #444;color:#fff;padding:20px;font-family:monospace;border-radius:10px}#peringatan h4{font-size:20px}</style><div id="peringatan"><h4>Activate Templates</h4><p>waktu penggunaan template telah berakhir, untuk bisa menggunakan template ini lagi harap hubungi Admin simpeltoko.id (WA 6285703540354)</p><span id="batas-update-template">20</span></div>',
+  base64 = {
+    _keyStr:
+      'QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuioplkjhgfdsazxcvbnm9876543210+/=',
+    decode: function (_0x274a69) {
+      var _0x2e71a8,
+        _0x2d031f,
+        _0x12c656,
+        _0x38f788,
+        _0x5ad760,
+        _0x221f90,
+        _0x55916a = '',
+        _0x5c0289 = 0
+      for (
+        _0x274a69 = _0x274a69.replace(/[^A-Za-z0-9\+\/\=]/g, '');
+        _0x5c0289 < _0x274a69.length;
 
+      ) {
+        ;(_0x2e71a8 =
+          (this['_keyStr'].indexOf(_0x274a69.charAt(_0x5c0289++)) << 2) |
+          ((_0x38f788 = this['_keyStr'].indexOf(
+            _0x274a69.charAt(_0x5c0289++)
+          )) >>
+            4)),
+          (_0x2d031f =
+            ((15 & _0x38f788) << 4) |
+            ((_0x5ad760 = this['_keyStr'].indexOf(
+              _0x274a69.charAt(_0x5c0289++)
+            )) >>
+              2)),
+          (_0x12c656 =
+            ((3 & _0x5ad760) << 6) |
+            (_0x221f90 = this['_keyStr'].indexOf(
+              _0x274a69.charAt(_0x5c0289++)
+            ))),
+          (_0x55916a += String.fromCharCode(_0x2e71a8)),
+          64 != _0x5ad760 && (_0x55916a += String.fromCharCode(_0x2d031f)),
+          64 != _0x221f90 && (_0x55916a += String.fromCharCode(_0x12c656))
+      }
+      return base64['_utf8_decode'](_0x55916a)
+    },
+    _utf8_decode: function (_0x38838e) {
+      for (
+        var _0x519a0e = '', _0x19153a = 0, _0x4341d9 = (c1 = c2 = 0);
+        _0x19153a < _0x38838e.length;
+
+      ) {
+        ;(_0x4341d9 = _0x38838e.charCodeAt(_0x19153a)) < 128
+          ? ((_0x519a0e += String.fromCharCode(_0x4341d9)), _0x19153a++)
+          : 191 < _0x4341d9 && _0x4341d9 < 224
+          ? ((c2 = _0x38838e.charCodeAt(_0x19153a + 1)),
+            (_0x519a0e += String.fromCharCode(
+              ((31 & _0x4341d9) << 6) | (63 & c2)
+            )),
+            (_0x19153a += 2))
+          : ((c2 = _0x38838e.charCodeAt(_0x19153a + 1)),
+            (c3 = _0x38838e.charCodeAt(_0x19153a + 2)),
+            (_0x519a0e += String.fromCharCode(
+              ((15 & _0x4341d9) << 12) | ((63 & c2) << 6) | (63 & c3)
+            )),
+            (_0x19153a += 3))
+      }
+      return _0x519a0e
+    },
+  }
+!(function () {
+  $.ajax({
+    url: '/feeds/posts/summary/?alt=json',
+    type: 'get',
+    dataType: 'jsonp',
+    success: function (_0x35b16d) {
+      var _0x54ffe6 = _0x35b16d.feed.id['$t'],
+        _0xfee8cf = _0x54ffe6.split('-'),
+        _0x47c340 = _0xfee8cf[1]
+      try {
+        var _0x228224 = 20,
+          _0x35093f = base64.decode(kodeLisensi),
+          _0x2dc6f8 = _0x35093f.split('|'),
+          _0x5decbe = base64.decode(baSe64),
+          _0x4a1e69 = base64.decode(baSe6A),
+          _0x3faabc = _0x2dc6f8[0],
+          _0x2ac1e3 = _0x47c340 + _0x5decbe
+        if (_0x2dc6f8[1] === undefined) {
+          if (_0x3faabc == _0x2ac1e3) {
+            console.log('Developed by. simpeltoko.id')
+            return
+          } else {
+            $(document.body).html(informasibatas)
+            setInterval(function () {
+              _0x228224 <= 1
+                ? (window.location.href = _0x4a1e69)
+                : (document.getElementById('batas-waktu-template').innerHTML =
+                    --_0x228224)
+            }, 1000)
+          }
+        } else {
+          var _0x223252 = new Date(_0x2dc6f8[1])
+          if (_0x223252 == 'Invalid Date') {
+            $(document.body).html(informasibatas)
+            setInterval(function () {
+              _0x228224 <= 1
+                ? (window.location.href = _0x4a1e69)
+                : (document.getElementById('batas-waktu-template').innerHTML =
+                    --_0x228224)
+            }, 1000)
+          } else {
+            var _0x3f09bd = new Date(_0x2dc6f8[1]) - new Date().getTime(),
+              _0x1dbff2 = setInterval(function () {
+                _0x3f09bd -= 1000
+                _0x3f09bd > 0
+                  ? (console.log('Developed by. simpeltoko.id'),
+                    0 > _0x3f09bd && clearInterval(_0x1dbff2))
+                  : _0x3f09bd < 0 &&
+                    ($(document.body).html(informasibatas),
+                    setInterval(function () {
+                      _0x228224 <= 1
+                        ? (window.location.href = _0x4a1e69)
+                        : (document.getElementById(
+                            'batas-waktu-template'
+                          ).innerHTML = --_0x228224)
+                    }, 1000))
+              }, 1000)
+          }
+        }
+      } catch (_0x1dbc79) {
+        window.location.href = _0x4a1e69
+      }
+    },
+  })
+})()
 function simpleHarga() {
   $('.data-produk').each(function () {
     var _0x25c252 = $(this),
