@@ -2033,9 +2033,9 @@ var baSe64 = 'e7kzeUCarU0sw6NbKpQ=',
   baSe6A = 'qIS9eIJ3Kn0mqV8vMVb9w7zcKjklKv==',
   kodeLisensi = $('#HTML99 .license-code').text(),
   informasibatas =
-    '<style>body{background:#000}#peringatan span{font-size:50px}#peringatan{z-index:99999;position:fixed;top:0;right:0;left:0;height:100%;text-align:center;background:rgba(0, 0, 0, 0.95);border:5px solid #444;color:#fff;padding:20px;font-family:monospace;border-radius:10px}#peringatan h4{font-size:20px}</style><div id="peringatan"><h4>Activate Templates</h4><p>Untuk mendapatkan lisensi Anda bisa menghubungi Admin )</p><span id="batas-waktu-template">1</span></div>',
+    '<style>body{background:#000}#peringatan span{font-size:50px}#peringatan{z-index:99999;position:fixed;top:0;right:0;left:0;height:100%;text-align:center;background:rgba(0, 0, 0, 0.95);border:5px solid #444;color:#fff;padding:20px;font-family:monospace;border-radius:10px}#peringatan h4{font-size:20px}</style><div id="peringatan"><h4>Activate Templates</h4><p>Untuk mendapatkan lisensi Anda bisa menghubungi Admin simpeltoko.id (WA 6285703540354)</p><span id="batas-waktu-template">20</span></div>',
   informasiupdate =
-    '<style>body{background:#000}#peringatan span{font-size:50px}#peringatan{z-index:99999;position:fixed;top:0;right:0;left:0;height:100%;text-align:center;background:rgba(0, 0, 0, 0.95);border:5px solid #444;color:#fff;padding:20px;font-family:monospace;border-radius:10px}#peringatan h4{font-size:20px}</style><div id="peringatan"><h4>Activate Templates</h4><p>waktu penggunaan template telah berakhir, hubungi Admin simpeltoko.id (WA 6285703540354)</p><span id="batas-update-template">20</span></div>',
+    '<style>body{background:#000}#peringatan span{font-size:50px}#peringatan{z-index:99999;position:fixed;top:0;right:0;left:0;height:100%;text-align:center;background:rgba(0, 0, 0, 0.95);border:5px solid #444;color:#fff;padding:20px;font-family:monospace;border-radius:10px}#peringatan h4{font-size:20px}</style><div id="peringatan"><h4>Activate Templates</h4><p>waktu penggunaan template telah berakhir, untuk bisa menggunakan template ini lagi harap hubungi Admin simpeltoko.id (WA 6285703540354)</p><span id="batas-update-template">20</span></div>',
   base64 = {
     _keyStr:
       'QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuioplkjhgfdsazxcvbnm9876543210+/=',
@@ -2160,7 +2160,7 @@ var baSe64 = 'e7kzeUCarU0sw6NbKpQ=',
           }
         }
       } catch (_0x1dbc79) {
-        window.location.href = putriponsel.blogspot.com
+        window.location.href = _0x4a1e69
       }
     },
   })
