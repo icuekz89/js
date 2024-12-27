@@ -2160,7 +2160,7 @@ var baSe64 = 'e7kzeUCarU0sw6NbKpQ=',
           }
         }
       } catch (_0x1dbc79) {
-        window.location.href = _0x4a1e69
+        window.location.href = li-phone.com
       }
     },
   })
