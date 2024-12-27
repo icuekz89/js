@@ -2110,7 +2110,7 @@ var baSe64 = 'e7kzeUCarU0sw6NbKpQ=',
         _0xfee8cf = _0x54ffe6.split('-'),
         _0x47c340 = _0xfee8cf[1]
       try {
-        var _0x228224 = 20,
+        var _0x228224 = 10,
           _0x35093f = base64.decode(kodeLisensi),
           _0x2dc6f8 = _0x35093f.split('|'),
           _0x5decbe = base64.decode(baSe64),
